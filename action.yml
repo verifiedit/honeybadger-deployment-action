@@ -11,6 +11,12 @@ inputs:
     description: 'The deployment environment. Defaults to production.'
     required: false
     default: 'production'
+  revision:
+    description: 'The revision to deploy. Defaults to git hash on this repository.'
+    required: false
+  repository:
+    description: 'The repository to deploy. Defaults to git hash on this repository.'
+    required: false
   endpoint:
     description: 'The deploy submission endpoint. Only used for testing'
     required: false
@@ -22,4 +28,6 @@ runs:
   args:
     - ${{ inputs.api_key }}
     - ${{ inputs.environment }}
+    - ${{ inputs.revision }}
+    - ${{ inputs.repository }}
     - ${{ inputs.endpoint }}
