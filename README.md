@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: honeybadger-io/github-notify-deploy-action@v1
+      - uses: verifiedit/honeybadger-deployment-action@v1
         with:
           api_key: ${{ secrets.HONEYBADGER_API_KEY }}
 ```
