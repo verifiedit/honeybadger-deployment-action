@@ -12,7 +12,7 @@ Use these inputs to customise the action.
 | api_key     | N/A                                   | Y         | The Honeybadger project API key                       |
 | environment | production                            | N         | The deployment environment                            |
 | revision    | $GITHUB_SHA                           | N         | The revision to deploy as                             |
-| repository  | git@github.com:$GITHUB_REPOSITORY.git | N         | The repository being deployed                         |
+| repository  | $GITHUB_REPOSITORY                    | N         | The repository being deployed                         |
 | endpoint    | https://api.honeybadger.io/v1/deploys | N         | The deploy submission endpoint. Only used for testing |
 
 #### Example
